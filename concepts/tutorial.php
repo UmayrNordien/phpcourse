@@ -13,7 +13,9 @@
 </div>
 </body>
 </html>
-<?php   
+<?php
+echo '<br>';
+echo '<button href="../hello.php">PREVIOUS</button> hello world';
 echo '<br>';
 
 echo '<h2><pre>Welcome to the tutorial page (PHP Course)</pre></h2>';
@@ -188,6 +190,32 @@ do{
 } while($varwhile <= 8);
 
 echo '<hr>';
+
+
+
+//For Loop
+echo '<h4>For Loop</h4>';
+echo '<h5>The for loop - Loops through a block of code a specified number of times</h5>';
+echo '<h6>OUTPUT:</h6>';
+
+for($varfor = 1; $varfor <=6; $varfor++){
+    echo "Number: $varfor <br>";
+}
+
+echo '<br>';
+
+//using the for loop for user defined functions:
+function name(){
+    for($varfor = 9; $varfor <=14; $varfor++){
+        echo "Number: $varfor <br>";
+    }
+}
+name();
+
+
+echo '<hr>';
+echo '<br>';
+echo'<button href="oops.php">NEXT</button> OOPS IN PHP';
 ?>
 <style>
     *{
