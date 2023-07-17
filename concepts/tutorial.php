@@ -15,7 +15,8 @@
 </html>
 <?php
 echo '<br>';
-echo '<button href="../hello.php">PREVIOUS</button> hello world';
+echo '<a  href="../hello.php"><button>PREVIOUS</button></a>';
+echo ' hello world';
 echo '<br>';
 
 echo '<h2><pre>Welcome to the tutorial page (PHP Course)</pre></h2>';
@@ -215,7 +216,8 @@ name();
 
 echo '<hr>';
 echo '<br>';
-echo'<button href="oops.php">NEXT</button> OOPS IN PHP';
+echo '<a href="oops.php"><button >NEXT</button></a>';
+echo ' OOPS IN PHP';
 ?>
 <style>
     *{
