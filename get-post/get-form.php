@@ -12,34 +12,36 @@ echo '<br>';
 echo '<a href="http://localhost/phpcourse/"><button >BACK TO INDEX</button></a>';
 echo '<br>';
 
-echo '<h2><pre>GET | POST</pre></h2>';
+echo '<h2><pre>GET Method</pre></h2>';
 
 echo '<br>';
 echo '<hr>';
 
-
+//GET Method
+echo '<h4>GET Method:</h4>';
+echo '<h5>Sends the encoded user information appended to the page request.</h5>';
+echo '<h6>OUTPUT:</h6>';
 
 if(isset($_GET["name"]) || isset($_GET["age"])) {
     echo 'Hi '. $_GET["name"]. "<br>";
     echo "Your age is". $_GET["age"]. "years"; 
 }
-
-
-
-
-
-
-
 ?>
-<form action = "<?php $_PHP_SELF ?>" method = "GET">
+<!-- Form 1 /GET/ -->
+<h5>GET Form</h5>
+<form class="get-form" action = "<?php $_PHP_SELF ?>" method = "GET">
     Name: <input type="text" name="name"/>
+    Age: <input type="text" name="age"/>
+     <input type="submit"/>
 </form>
-
+<hr>
 </body>
-
 </html>
 
 <style>
+    .get-form{
+        margin-bottom: 60px;
+    }
     *{
         background-color: #353535;
         color: white;
